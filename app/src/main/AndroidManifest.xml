@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.main"
+    android:versionCode="1"
+    android:versionName="1.0">
+
+    <uses-sdk android:minSdkVersion="8" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <android:uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <android:uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name">
+        <activity
+            android:name="com.raymond.main.HelloGridView"
+            android:label="@string/app_name"></activity>
+        <activity
+            android:name="com.raymond.main.MainEntrysActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="adhere.AdherentLayoutActivity" />
+        <activity android:name="com.compressTest.CompressTestActivity" />
+        <activity android:name="com.raymond.main.TestListActivity" />
+        <activity android:name="com.move.SimpleMoveActivity" />
+        <activity android:name="com.scroller.TestScrollerActivity" />
+        <activity android:name="com.raymond.main.TestTouchDelegateActivity" />
+        <activity android:name="com.raymond.main.TestSoftInputModeActivity" />
+        <activity android:name="com.raymond.main.TestSimpleDateFormatActivity" />
+        <activity android:name="com.tintdrawable.TestCompoundDrawableActivity" />
+
+        <service android:name="com.raymond.main.TestService" />
+
+        <activity android:name="com.testAIDL.TestAIDLActivity" />
+        <activity android:name="com.testLayout.testLayoutActivity" />
+
+        <service
+            android:name="com.testAIDL.TestAIDLService"
+            android:process=":remote" />
+
+        <activity android:name="com.raymond.main.TestSoundPoolActivity"></activity>
+    </application>
+
+</manifest>

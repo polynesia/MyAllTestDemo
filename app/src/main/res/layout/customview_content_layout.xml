@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+ >
+
+    <ImageView
+        android:id="@+id/myiv"
+        android:layout_width="fill_parent"
+        android:src="@drawable/kobe"
+        android:layout_height="150dp" />
+    
+        <TextView
+        android:id="@+id/tv_attendInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="8dp"
+        android:layout_marginRight="10dp"
+        android:drawablePadding="5dp"
+        android:drawableRight="@drawable/qq_freshnews_topic_attend_arrow_normal"
+        android:singleLine="true"
+        android:text="参与人信息"
+        android:textColor="#80ffffff"
+        android:textSize="12dp" />
+
+
+</merge>
