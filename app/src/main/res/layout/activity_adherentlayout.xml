@@ -1,0 +1,105 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:layout_centerInParent="true"
+        android:layout_height="120dp">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Summary：A component for adherent layout."
+            />
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="RTX：apexhuang"
+            />
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="BG：MIG"
+            />
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Part：Wireless Cooperative Development"
+            />
+        
+    </LinearLayout>
+    
+   
+    <adhere.AdherentLayout
+        android:id="@+id/adherentView"
+        android:layout_alignParentBottom="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#ADC">
+        
+        <ImageView
+            android:id="@+id/View"
+            android:text="23"
+            android:textColor="#FFF"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/skin_tips_new" /> 
+
+        
+    </adhere.AdherentLayout>
+
+    <adhere.AdherentLayout
+        android:id="@+id/adherentView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#ADC">
+
+        
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+        <ImageView
+            android:id="@+id/View2"
+            android:text="23"
+            android:textColor="#FFF"
+            android:gravity="center"
+            android:layout_width="fill_parent"
+            android:layout_height="130dp"
+            android:background="#30A0D0" />
+            
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#FFF"
+                android:gravity="center"
+                android:layout_centerInParent="true"
+                android:textSize="20sp"
+                android:id="@+id/textView"
+                android:text="I want to delete this view,can you help me?"/>
+
+
+        </RelativeLayout>
+
+    </adhere.AdherentLayout>
+
+
+    <adhere.AdherentLayout
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/adherentView3"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:background="#ADC">
+    
+    </adhere.AdherentLayout>
+    
+   
+
+</RelativeLayout>

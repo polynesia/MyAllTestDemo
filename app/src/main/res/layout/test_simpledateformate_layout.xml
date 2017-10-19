@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/gridview"
+        android:background="#FFFFFF" >
+
+        <TextView
+            android:id="@+id/mytv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/mytv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mytv1"
+            android:layout_marginTop="20dp" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/tv_foreword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mytv2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="12dp"
+            android:gravity="center_horizontal"
+            android:lineSpacingExtra="8dp"
+            android:text="陈坤带你走川藏！6月30日前，提交你的“行走计划”即有机会参加报名"
+            android:textColor="#ffaa22"
+            android:textSize="16dp" />
+
+        <RelativeLayout
+            android:id="@+id/rl_content_test_topic_item_layout"
+            android:layout_width="match_parent"
+            android:background="@drawable/kobe"
+            android:layout_below="@+id/tv_foreword"
+            android:layout_height="230dp" >
+
+            <ImageView
+                android:id="@+id/imgv_bg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:duplicateParentState="true" >
+            </ImageView>
+
+
+
+            <LinearLayout
+                android:id="@+id/ll_main"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center_horizontal"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tv_topic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:singleLine="true"
+                    android:text="说说你的糗事"
+                    android:textColor="#ffffff"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:id="@+id/tv_foreword2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="35dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:lineSpacingExtra="8dp"
+                    android:maxLines="2"
+                    android:text="陈坤带你走川藏！6月30日前，提交你的“行走计划”即有机会参加报名"
+                    android:textColor="#ffffff"
+                    android:textSize="16dp" />
+
+                <ImageView
+                    android:id="@+id/btn_publish"
+                    android:background="@drawable/qq_freshnews_topic_pub"
+                    android:layout_width="174dp"
+                    android:layout_height="40dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_attendInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="8dp"
+                android:layout_marginRight="10dp"
+                android:duplicateParentState="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/tv_attendInfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:singleLine="true"
+                    android:text="参与人信息"
+                    android:textColor="#80ffffff"
+                    android:textSize="12dp" />
+
+                <ImageView
+                    android:id="@+id/imgv_arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:duplicateParentState="true"
+                    android:src="@drawable/qq_freshnews_topic_attend_arrow_normal" />
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>
